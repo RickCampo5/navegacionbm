@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<title>Page Scroll Effects | CodyHouse</title>
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+
+<body data-hijacking="on" data-animation="scaleDown">
+	<nav class="menu">
+		<div class="contenedoriconos">
+			<i id="iconomenu" onclick="mostrarMenu()" class="fas fa-bars iconomenu"></i>
+			<i id="iconocerrar" class="fas fa-times iconocerrar" onclick="cerrarMenu()" style="display:none"></i>
+			<a href="#">En</a>
+			<a href="#">Es</a>
+		</div>
+		<div class="menuinterior">
+			<div class="menudiv primero" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Informe Anual 2018</a>
+					<img class="logobancomer" src="./images/logo-bbva-bancomer-v1.svg">
+				</div>
+				<div class="submenu listalinks1" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Carta del Presidente</a>
+						</li>
+						<li>
+							<a href="#">Carta del Vicepresidente</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menudiv segundo" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Perfil del grupo</a>
+					<img src="./images/banco.svg" alt="">
+				</div>
+				<div class="submenu5 listalinks2" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Aspiracion, propósito y valores</a>
+						</li>
+						<li>
+							<a href="#">Nuestro modelo de negocio</a>
+						</li>
+						<li>
+							<a href="#">Gobierno corporativo</a>
+						</li>
+						<li>
+							<a href="#">Impacto económico</a>
+						</li>
+						<li>
+							<a href="#">Grupos de interés y análisis de materialidad</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menudiv tercero" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Experiencia del cliente</a>
+					<img src="./images/movil.svg" alt="">
+				</div>
+				<div class="submenu6 listalinks3" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Experiencia única</a>
+						</li>
+						<li>
+							<a href="#">Transformación digital</a>
+						</li>
+						<li>
+							<a href="#">Comunicación Transparente, Clara y Responsable</a>
+						</li>
+						<li>
+							<a href="#">Protección de datos personales</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menudiv cuarto" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Medio Ambiente</a>
+					<img src="./images/mundo.svg" alt="">
+				</div>
+				<div class="submenu7 listalinks4" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Riesgos sociales, ambientales y reputacionales</a>
+						</li>
+						<li>
+							<a href="#">Bonos verdes</a>
+						</li>
+						<li>
+							<a href="#">Proveedores y compras responsables</a>
+						</li>
+						<li>
+							<a href="#">Huella ambiental</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menudiv quinto" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Inversion social</a>
+					<img src="./images/colab.svg" alt="">
+				</div>
+				<div class="submenu2 listalinks5" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Nuestra gente</a>
+						</li>
+						<li>
+							<a href="#">Inclusión financiera</a>
+						</li>
+						<li>
+							<a href="#">Comunidad</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menudiv sexto" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Banca Responsable</a>
+					<img src="./images/resp.svg" alt="">
+				</div>
+				<div class="submenu3 listalinks6" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Sistema de cumplimiento</a>
+						</li>
+						<li>
+							<a href="#">Programa de integridad</a>
+						</li>
+						<li>
+							<a href="#">Prevención de lavado de dinero</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="menudiv septimo" style="display:none">
+				<div class="titulo-img">
+					<a href="#">Anexos</a>
+					<img src="./images/anex.svg" alt="">
+				</div>
+				<div class="submenu4 listalinks7 anexos" style="display:none">
+					<ul>
+						<li>
+							<a href="#">Premios y reconocimientos</a>
+						</li>
+						<li>
+							<a href="#">Compromisos internacionales suscritos y vinculación con asociaciones</a>
+						</li>
+						<li>
+							<a href="#">Índice de contenidos GRI</a>
+						</li>
+						<li>
+							<a href="#">Estados Financieros Auditados</a>
+						</li>
+						<li>
+							<a href="#">Informe de revisión independiente</a>
+						</li>
+						<li>
+							<a href="#">Glosario</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="cd-section visible">
+		<div>
+			<h2>Page</h2>
+		</div>
+	</section>
+	<section class="cd-section">
+		<div class="divinterior-section">
+			<h2>Hi</h2>
+			<img class="logobancomer" src="./images/logo-bbva-bancomer-v1.svg">
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione quidem laborum cumque. Architecto
+					libero eaque natus quaerat! Asperiores, sit eos voluptatibus molestiae voluptate doloremque repudiandae
+					perspiciatis quidem explicabo recusandae!</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 3</h2>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 4</h2>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 5</h2>
+		</div>
+	</section>
+
+	<nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul>
+	</nav> <!-- .cd-vertical-nav -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/velocity.ui.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+
+</html>
